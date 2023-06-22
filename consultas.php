@@ -12,7 +12,7 @@ include('includes/menu.php');
     <title>Consulta de Alunos</title>
 
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- CSS -->    
     <link href="css/materialize.min.css" rel="stylesheet">
     <link href="css/default.css" rel="stylesheet">
@@ -36,7 +36,7 @@ include('includes/menu.php');
             <table class="striped">
                 <thead>
                     <tr>
-                        <th>Matricula</th>
+                        <th>Matrícula</th>
                         <th>Nome</th>
                         <th>Email</th>
                         <th>Telefone</th>
@@ -52,4 +52,4 @@ include('includes/menu.php');
             </table>
         </div>
     </div>
-<?php include_once 'includes/footer.php' ?>
+    <?php include_once 'includes/footer.php' ?>

@@ -1,7 +1,7 @@
 <?php
 include('BD/conexao.php');
 
-    if(isset($_POST['email'])) {
+    if(isset($_POST['email']) || isset($_POST['senha'])) {
 
         $email = $link->real_escape_string($_POST['email']);
         $senha = $link->real_escape_string($_POST['senha']);        
@@ -24,9 +24,10 @@ include('BD/conexao.php');
             header("Location: cadastro.php");
 
         } else {
-            echo "<p class='red-text'>".'Falha ao logar! Email ou Senha incorretos'."</p>";
+            echo "<h4 class='red-text'>".'Falha ao logar! Email ou Senha incorretos'."</h4>";
         }
     }
+            
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -34,6 +35,9 @@ include('BD/conexao.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- CSS PERSONALIZADO --> 
     <link rel="stylesheet" href="css/style-login.css">
 
     <title>Login</title>
@@ -51,7 +55,6 @@ include('BD/conexao.php');
                             <h2 text-align="center">Faça seu Login</h2>
                         </div>
                     </div>
-                    
                     <div class="input-login">
                         <div class="input-box">
                             <label>Email</label>
@@ -61,13 +64,15 @@ include('BD/conexao.php');
                             <label>Senha</label>
                             <input type="password" name="senha" placeholder="Insira sua senha" required>
                         </div> 
-
+                        <div class="forget">
+                            <label for=""><a href="#">Esqueci minha senha</a></label>
+                        </div>
                         <div class="login-button">
                             <button><a href="#">Login</a> </button>
                         </div>
                     </div>
                 </form>
-            </div>
+            </div>    
         </div>
     </main>
 </body>

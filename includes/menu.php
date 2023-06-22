@@ -4,7 +4,7 @@
             <ul class="right">
                 <li><a href="cadastro.php"><i class="material-icons left">account_circle</i> Cadastro</a></li>
                 <li><a href="consultas.php"><i class="material-icons left">search</i> Consulta</a></li>
-                <li><a href="logout.php">Logout</a></li>
+                <li><a href="logout.php"><i class="material-icons left">logout</i>Logout</a></li>
             </ul>
         </div>
     </nav>

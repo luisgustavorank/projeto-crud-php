@@ -4,7 +4,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
     <!--SCRIPT JS-->
-    <script src="js/validate.js" deefer></script>
+    <script src="js/validate.js"></script>
     <script src="js/materialize.min.js"></script>
 
    <footer class="page-footer blue-grey" style="margin-top:10em;">

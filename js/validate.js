@@ -27,7 +27,7 @@ $('#telefone').mask('(00) 000000000');
 $('#matricula').mask('000000');
 
 // Janela para confirmar o delete
-$('.Deletar').on('click', function(event){
+$('.deletar').on('click', function(event){
     event.preventDefault();
 
     var Link=$(this).attr('href');
